@@ -1,67 +1,134 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Burger</title>
     <style>
-        body
-        {
+        body {
             margin: 0px;
+            padding: 0px;
             background-color: antiquewhite;
             font-size: 50px;
         }
-        .absolate
-        {
+
+        .absolate {
             position: absolute;
             color: green;
             font-style: italic;
-			padding-left: 20px;
+            padding-left: 20px;
         }
-        .relative 
-        {
+
+        .relative {
             position: relative;
             text-align: right;
             color: brown;
-			padding-right: 20px;
+            padding-right: 20px;
         }
-		.Price
-		{
-			font-size: 70px;
-			text-align: center;
-			background-color: red;
-			color: aqua;
-			font-style: italic;
-            margin-top: 0px;
-			
-		}
+
+        .Price {
+            font-size: 70px;
+            text-align: center;
+            background-color: red;
+            color: aqua;
+            font-style: italic;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .Home>a {
+
+            color: black;
+            text-decoration: none;
+            font-size: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border: 4px solid black;
+
+        }
+
+        .navbar {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(119, 119, 224);
+        }
+
+        .navbar ul {
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin-left: 15px;
+            margin-right: 15px;
+            color: antiquewhite;
+           
+        }
+        .navbar ul li:hover 
+        {
+           font-size: 60px;
+
+        }
+
+
+        
     </style>
 </head>
+
 <body>
-	<p class="Price">Price</p>
+    <div class="Price">Price</div>
+    <div class="navbar">
+        <ul>
+            <a href="#Zinger">
+                <li>Zinger</li>
+            </a>
+            <a href="#Beef">
+                <li>Beef</li>
+            </a>
+            <a href="#Chicken">
+                <li>Chicken</li>
+            </a>
+        </ul>
+    </div>
+    <div class="Home"><a href="./index.html">Home</a><a href="./pizza.html">Pizza</a><a href="./bbq.html">BBQ</a></div>
     <div class="absolate">
-       
+        <h1 id="Zinger">Zinger Burgers</h1>
         Zinger Burger <br>
         Zinger Cheese Burger <br>
         Zinger Jumbo Burger<br>
+
+        <h1 id="Beef">Beef Burgers</h1>
         Beef Burger<br>
         Beef Cheese Burger<br>
         Special Beef Burger<br>
+        <h1 id="Chicken">Chicken Burgers</h1>
         Chicken Burger<br>
         Chicken Cheese Burger<br>
         Chicken Spicy Burger<br>
-        
-        </div>
+
+    </div>
     <div class="relative">
-       
-            <del>700</del><ins>650</ins><br>
-            <del>750</del><ins>700</ins><br>
-            <del>900</del><ins>800</ins><br>
-            <del>650</del><ins>600</ins><br>
-            <del>700</del><ins>650</ins><br>
-            <del>800</del><ins>700</ins><br>
-            <del>550</del><ins>500</ins><br>
-            <del>600</del><ins>550</ins><br>
-            <del>700</del><ins>650</ins><br>
-        
+
+        <h1>Price</h1>
+
+        <del>700</del><ins>650</ins><br>
+        <del>750</del><ins>700</ins><br>
+        <del>900</del><ins>800</ins><br>
+
+        <h1>Price</h1>
+        <del>650</del><ins>600</ins><br>
+        <del>700</del><ins>650</ins><br>
+        <del>800</del><ins>700</ins><br>
+
+        <h1>Price</h1>
+
+        <del>550</del><ins>500</ins><br>
+        <del>600</del><ins>550</ins><br>
+        <del>700</del><ins>650</ins><br>
+
     </div>
 </body>
+
 </html>

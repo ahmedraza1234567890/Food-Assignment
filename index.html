@@ -8,6 +8,8 @@
   <style>
     body {
       margin: 0px;
+      padding: 0px;
+      width: 100%;
     }
 
     .head {
@@ -20,73 +22,206 @@
       display: inline-block;
       margin-left: 20px;
       margin-right: 20px;
-      padding-left: 20px; 
+      padding-left: 20px;
       transition: width 2s, height 2s;
     }
 
     .fastfood:hover {
-      width: 300px;
-      height: 300px;
-      
+      width: 350px;
+      height: 250px;
+
+
 
     }
 
-    h1 {
+    .NameResturant {
       text-align: center;
       font-style: italic;
       font-size: 50px;
       color: rgb(86, 25, 25);
+      margin: 0px;
+      margin-bottom: 35px;
 
     }
 
-    .menu ul {
+    .navbar ul {
       text-align: center;
+
     }
 
-    .menu ul li {
+    .navbar ul li {
       display: inline-block;
       margin-left: 15px;
       margin-right: 15px;
       font-size: 30px;
       color: brown;
+      list-style: none;
+      border: 2px solid rgb(9, 1, 1);
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 10px;
+      
+
+    }
+    .navbar ul li:hover
+    {
+      font-size: 40px;
+      
+    }
+    th {
+      font-size: 55px;
+      width: 100%;
+
+
+      background-color: rgb(138, 104, 58);
+
     }
 
-    h1 {
+    .secondnavbar ul {
+      text-align: center;
+
+    }
+
+    .secondnavbar ul li {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: rgb(74, 67, 58);
+      border: 4px dotted black;
+      margin-left: 10px;
+    }
+
+    .menu {
+      background-color: black;
+      padding: 20px;
+      
+      color: aliceblue;
+      text-align: center;
+      font-size: 70px;
+    }
+
+    .tags {
+      background-color: ;
+      padding: 20px;
+      
+      color: aliceblue;
+      text-align: center;
+      font-size: 70px;
+    }
+
+    .tagsnames {
+      background-color: burlywood;
+      padding-left: 15px;
+      color: aliceblue;
+      font-size: 50px;
+    }
+    .tagsnames ol 
+    {
       margin: 0px;
-      margin-bottom: 35px;
-    }
+      padding: 45px;
 
-    .logo {}
+    }
+    .tagsnames ol li
+    {
+      padding: 20px;
+    }
   </style>
 </head>
 
 <body>
+  <!-- head -->
+
+
   <div class="head">
-    <div><img class="logo" src="McDonalds_Logo.jpg" height="50px" align="left">
+
+
+    <!-- logo -->
+    <div><img class="logo" src="McDonalds_Logo.jpg" height="50px" align="left"></div>
+
+    <!-- NameResturant -->
+    <h1 class="NameResturant">Memon Resturant</h1>
+
+    <!-- 4 imges -->
+    <div><img class="fastfood" src="1 img.jpg">
+      <img class="fastfood" src="2 img.jpg">
+      <img class="fastfood" src="3 img.jpg">
+      <img class="fastfood" src="4 img.jpg">
     </div>
-    <h1>Memon Resturant</h1>
-    <img class="fastfood" src="1 img.jpg">
-    <img class="fastfood" src="2 img.jpg">
-    <img class="fastfood" src="3 img.jpg">
-    <img class="fastfood" src="4 img.jpg">
-    <div class="menu">
+
+    <!-- navbar -->
+    <div class="navbar">
       <ul>
-        
+
+        <a href="./index.html">
           <li>Menu</li>
-       
+        </a>
+
+
         <a href="./burger.html">
           <li>Burgers</li>
         </a>
         <a href="./pizza.html">
           <li>Pizza</li>
         </a>
-        
-          <li>Deals</li>
-       
+
+        <a href="./bbq.html"><li>BBQ</li></a>
+
       </ul>
     </div>
-  </div>
 
+    <!-- secondnavbar -->
+    <div class="secondnavbar">
+      <ul>
+        <a href="#a">
+          <li>fastfood</li>
+        </a>
+        <a href="#b">
+          <li>Pizza</li>
+        </a>
+        <a href="#c">
+          <li>BBQ</li>
+        </a>
+      </ul>
+    </div>
+
+      
+
+      <!-- list -->
+      <div class="menu" id="a">FastFood</div>
+      <div class="tagsnames">
+        <ol>
+          <li>Zinger Burgers</li>
+          <li>Beef Burgers</li>
+          <li>Chicken Burgers</li>
+        </ol>
+      </div>
+
+      <!-- list -->
+      <div class="menu" id="b">Pizza</div>
+      <div class="tagsnames">
+        <ol>
+          <li>Small Pizza</li>
+          <li>Medium Pizza</li>
+          <li>Large Pizza</li>
+        </ol>
+      </div>
+
+      <!-- list -->
+      
+        <div class="menu" id="c">BBQ</div>
+        <div class="tagsnames">
+        <ol>
+          <li>Tikka</li>
+          <li>Boties</li>
+          <li>Kababs</li>
+        </ol>
+      </div>
+
+
+
+    </div>
 </body>
 
 </html>
